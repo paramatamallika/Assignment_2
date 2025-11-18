@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Colors according to the image */
+        .b1 { background-color: #00CFFF; }   /* 1 */
+        .b2 { background-color: #FF4500; }   /* 2 */
+        .b3 { background-color: #3F6FF0; }   /* 3 */
+        .b4 { background-color: #FFD700; }   /* 4 */
+        .b5 { background-color: #9933FF; }   /* 5 */
+        .b6 { background-color: #32CD32; }   /* 6 */
+        .b7 { background-color: #FF8A65; }   /* 7 */
+        .b8 { background-color: #26A69A; }   /* 8 */
+        .b9 { background-color: #7A0000; }   /* 9 */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box b2">2.</div>
+        <div class="box b3">3.</div>
+        <div class="box b4">4.</div>
+
+        <div class="box b5">5.</div>
+        <div class="box b6">6.</div>
+        <div class="box b1">1.</div>
+
+        <div class="box b7">7.</div>
+        <div class="box b8">8.</div>
+        <div class="box b9">9.</div>
+    </div>
+
+</body>
+</html>
